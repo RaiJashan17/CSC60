@@ -1,0 +1,14 @@
+Script started on Mon 06 Feb 2023 12:04:12 PM PST
+]0;jrai@ecs-pa-coding3:~[?1034h[jrai@ecs-pa-coding3 ~]$ cat .vimrc
+"Jashan Rai
+:set tabstop=4
+:set shiftwidth=4
+:set smartindent
+:set expandtab
+:set number
+:set background=dark
+
+]0;jrai@ecs-pa-coding3:~[jrai@ecs-pa-coding3 ~]$ exit
+exit
+
+Script done on Mon 06 Feb 2023 12:04:57 PM PST
