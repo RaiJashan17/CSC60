@@ -1,0 +1,21 @@
+Script started on Wed 01 Mar 2023 01:10:06 PM PST
+]0;jrai@ecs-pa-coding3:~/csc60/lab5[?1034h[jrai@ecs-pa-coding3 lab5]$ gcc lab5.c
+]0;jrai@ecs-pa-coding3:~/csc60/lab5[jrai@ecs-pa-coding3 lab5]$ ./a[K.a[K[Ka.out
+]0;jrai@ecs-pa-coding3:~/csc60/lab5[jrai@ecs-pa-coding3 lab5]$ cat lav[Kb5.txt
+
+Jashan Rai.  Lab 5. 
+
+Data on Parabolas 
+
+ Length      Depth        Area   
+--------   ---------   --------- 
+  12.60      24.80      208.320 
+   5.60       7.80       29.120 
+   7.85      12.61       65.992 
+   8.90       4.70       27.887 
+
+
+]0;jrai@ecs-pa-coding3:~/csc60/lab5[jrai@ecs-pa-coding3 lab5]$ exit
+exit
+
+Script done on Wed 01 Mar 2023 01:10:42 PM PST

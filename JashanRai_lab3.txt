@@ -1,0 +1,208 @@
+Script started on Mon 20 Feb 2023 09:40:59 PM PST
+]0;jrai@ecs-pa-coding3:~[?1034h[jrai@ecs-pa-coding3 ~]$ history -c
+]0;jrai@ecs-pa-coding3:~[jrai@ecs-pa-coding3 ~]$ cd csc60
+]0;jrai@ecs-pa-coding3:~/csc60[jrai@ecs-pa-coding3 csc60]$ mkir la[K[K[K[K[K[Kd[Kkdir lab3
+]0;jrai@ecs-pa-coding3:~/csc60[jrai@ecs-pa-coding3 csc60]$ cd lab3
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ pwd
+/home/student/jrai/csc60/lab3
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ mkdir aaa
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ cd aaa
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ pwd
+/home/student/jrai/csc60/lab3/aaa
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ cd..[K[K ..
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ pwd
+/home/student/jrai/csc60/lab3
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ ls > file1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ cat file1
+aaa
+file1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ less file1
+[?1049h[?1h=aaa
+file1
+[7mfile1 (END)[27m[K[K[?1l>[?1049l]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ file *
+aaa:   directory
+file1: ASCII text
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ wc file1
+ 2  2 10 file1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      10 file1
+      2       2      10 total
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ grep lab file1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ grep file file1
+[01;31m[Kfile[m[K1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ cp file1 file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ ls
+[0m[01;34maaa[0m  file1  file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ cd aaa
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ pwd
+/home/student/jrai/csc60/lab3/aaa
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ cp ../file1 .
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ls
+file1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ mv file1 file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ls
+file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ mv ../file1 .
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ cd ..
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ ls
+[0m[01;34maaa[0m  file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ cd aaa
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ls
+file1  file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ cmp file1 file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ls > aaalist
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ cmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ diff file1 aaalist
+1c1
+< aaa
+---
+> aaalist
+2a3
+> file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ rm -i file1
+rm: remove regular file ‘file1’? y
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ls
+aaalist  file2
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+jrai     23294  0.0  0.0 126392  2260 pts/0    Ss   21:24   0:00 -bash
+jrai     23640  0.0  0.0 114300   828 pts/0    S+   21:40   0:00 script JashanRai_lab3.txt
+jrai     23642  0.0  0.0 114308   404 pts/0    S+   21:40   0:00 script JashanRai_lab3.txt
+jrai     23643  0.0  0.0 126388  2244 pts/1    Ss   21:40   0:00 bash -i
+jrai     23728  0.0  0.0 166156  1928 pts/1    R+   21:45   0:00 ps u
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 85174467 23643 23642  0 80 0 - 31597 do_wai pts/1    00:00:00 bash
+0 R 85174467 23729 23643  0 80 0 - 38332 -      pts/1    00:00:00 ps
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 85174467 23643 23642  0 80 0 - 31597 do_wai pts/1    00:00:00 bash
+0 R 85174467 23730 23643  0 80 0 - 38332 -      pts/1    00:00:00 ps
+]0;jrai@ecs-pa-coding3:~/csc60/lab3/aaa[jrai@ecs-pa-coding3 aaa]$ cd ..
+]0;jrai@ecs-pa-coding3:~/csc60/lab3[jrai@ecs-pa-coding3 lab3]$ cd ..
+]0;jrai@ecs-pa-coding3:~/csc60[jrai@ecs-pa-coding3 csc60]$ cd lab2
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ head lab2.c
+/*------------*/
+/* Jashan Rai */
+/* Lab 2 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+    {
+        printf("\nLab 2.\n\n");
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ head -20 lab2.c
+/*------------*/
+/* Jashan Rai */
+/* Lab 2 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+    {
+        printf("\nLab 2.\n\n");
+        printf("Hello World.\n");
+        printf("Hi, Jashan Rai.\n\n");
+        printf("\"I've never been and I don't really care about being cool. It's just an awful lot of time and hair gel wasted.\"\n- Chris Martin, Member of Coldplay\n\n");
+    
+        return EXIT_SUCCESS;
+    }
+/*------------*/
+         
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ q
+bash: q: command not found
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ tail lab2.c
+    {
+        printf("\nLab 2.\n\n");
+        printf("Hello World.\n");
+        printf("Hi, Jashan Rai.\n\n");
+        printf("\"I've never been and I don't really care about being cool. It's just an awful lot of time and hair gel wasted.\"\n- Chris Martin, Member of Coldplay\n\n");
+    
+        return EXIT_SUCCESS;
+    }
+/*------------*/
+         
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ tail -20 lab2.c
+/*------------*/
+/* Jashan Rai */
+/* Lab 2 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+    {
+        printf("\nLab 2.\n\n");
+        printf("Hello World.\n");
+        printf("Hi, Jashan Rai.\n\n");
+        printf("\"I've never been and I don't really care about being cool. It's just an awful lot of time and hair gel wasted.\"\n- Chris Martin, Member of Coldplay\n\n");
+    
+        return EXIT_SUCCESS;
+    }
+/*------------*/
+         
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ ls -al | less
+[?1049h[?1h=total 28
+drwxr-xr-x 2 jrai domain users 4096 Feb 12 20:19 .
+drwxr-xr-x 4 jrai domain users 4096 Feb 20 21:41 ..
+-rwxr-xr-x 1 jrai domain users 8360 Feb 12 20:18 a.out
+-rw-r--r-- 1 jrai domain users  730 Feb 12 20:18 JashanRai_lab2.txt
+-rw-r--r-- 1 jrai domain users  453 Feb 12 20:12 lab2.c
+[7m(END)[27m[K[K[?1l>[?1049l]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ history
+    1  2023-02-20 21:41:10 cd csc60
+    2  2023-02-20 21:41:18 mkdir lab3
+    3  2023-02-20 21:41:30 cd lab3
+    4  2023-02-20 21:41:36 pwd
+    5  2023-02-20 21:41:39 mkdir aaa
+    6  2023-02-20 21:41:52 cd aaa
+    7  2023-02-20 21:41:56 pwd
+    8  2023-02-20 21:42:02 cd ..
+    9  2023-02-20 21:42:09 pwd
+   10  2023-02-20 21:42:14 ls > file1
+   11  2023-02-20 21:42:19 cat file1
+   12  2023-02-20 21:42:31 less file1
+   13  2023-02-20 21:42:37 file *
+   14  2023-02-20 21:42:45 wc file1
+   15  2023-02-20 21:42:49 wc *
+   16  2023-02-20 21:42:58 grep lab file1
+   17  2023-02-20 21:43:05 grep file file1
+   18  2023-02-20 21:43:13 cp file1 file2
+   19  2023-02-20 21:43:17 ls
+   20  2023-02-20 21:43:23 cd aaa
+   21  2023-02-20 21:43:28 pwd
+   22  2023-02-20 21:43:41 cp ../file1 .
+   23  2023-02-20 21:43:45 ls
+   24  2023-02-20 21:43:54 mv file1 file2
+   25  2023-02-20 21:43:59 ls
+   26  2023-02-20 21:44:07 mv ../file1 .
+   27  2023-02-20 21:44:12 cd ..
+   28  2023-02-20 21:44:17 ls
+   29  2023-02-20 21:44:22 cd aaa
+   30  2023-02-20 21:44:26 ls
+   31  2023-02-20 21:44:36 cmp file1 file2
+   32  2023-02-20 21:44:48 ls > aaalist
+   33  2023-02-20 21:44:56 cmp file1 aaalist
+   34  2023-02-20 21:45:10 diff file1 aaalist
+   35  2023-02-20 21:45:22 rm -i file1
+   36  2023-02-20 21:45:28 ls
+   37  2023-02-20 21:45:35 ps u
+   38  2023-02-20 21:45:44 ps -l
+   39  2023-02-20 21:46:05 cd ..
+   40  2023-02-20 21:46:20 cd lab2
+   41  2023-02-20 21:46:30 head lab2.c
+   42  2023-02-20 21:46:41 head -20 lab2.c
+   43  2023-02-20 21:46:45 q
+   44  2023-02-20 21:46:59 tail lab2.c
+   45  2023-02-20 21:47:17 tail -20 lab2.c
+   46  2023-02-20 21:47:34 ls -al | less
+   47  2023-02-20 21:47:43 history
+]0;jrai@ecs-pa-coding3:~/csc60/lab2[jrai@ecs-pa-coding3 lab2]$ exit
+exit
+
+Script done on Mon 20 Feb 2023 09:47:47 PM PST
